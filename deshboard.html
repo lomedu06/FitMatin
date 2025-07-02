@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tableau de bord - FitMatin</title>
+  <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+  <h1 class="text-3xl font-bold mb-4">Bonjour sur FitMatin 💪</h1>
+  <h2 class="text-xl font-semibold mb-2">Exercices proposés :</h2>
+  <ul class="list-disc ml-6 mb-4" id="defaultExercises"></ul>
+
+  <h2 class="text-xl font-semibold mb-2">Ajoute ton propre exercice :</h2>
+  <form id="exerciseForm" class="flex space-x-2 mb-4">
+    <input type="text" id="exerciseName" placeholder="Nom de l'exercice" class="flex-grow p-2 border rounded" />
+    <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Ajouter</button>
+  </form>
+
+  <h2 class="text-xl font-semibold mb-2">Tes exercices :</h2>
+  <ul class="list-disc ml-6" id="exerciseList"></ul>
+</body>
+</html>
